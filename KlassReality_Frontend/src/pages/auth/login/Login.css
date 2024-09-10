@@ -1,0 +1,126 @@
+.login-bg{
+  background: url(../../../assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.cloud1 {
+  display: block;
+  width: 319px;
+  height: 56px;
+  position: fixed;
+  top: 190px;
+  left: -14px;
+  z-index: 2;
+  animation: floatingClouds 5s infinite;
+}
+.cloud2 {
+  display: block;
+  width: 319px;
+  height: 56px;
+  position: fixed;
+  top: 160px;
+  left: -29px;
+  z-index: 1;
+  animation: floatingClouds 5s infinite;
+}
+.cloud3 {
+  display: block;
+  position: fixed;
+  width: 319px;
+  height: 56px;
+  top: 285px;
+  right: -169px;
+  z-index: 0;
+  -webkit-animation: floatingClouds 5s infinite;
+  animation: floatingClouds 5s infinite;
+}
+.cloud4 {
+  display: block;
+  width: 227px;
+  height: 56px;
+  top: 314px;
+  right: -91px;
+  position: fixed;
+  z-index: 1;
+  animation: floatingClouds 5s infinite;
+}
+.cloud5 {
+  display: block;
+  width: 227px;
+  height: 56px;
+  bottom: 31px;
+  right: -165px;
+  position: fixed;
+  z-index: 1;
+  animation: floatingClouds 5s infinite;
+}
+
+@media screen and (max-width: 640px) {
+  .cloud1,
+  .cloud2,
+  .cloud3,
+  .cloud4,
+  .cloud5 {
+    display: none;
+  }
+}
+
+@keyframes eclips {
+  0% {
+    transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) translateX(0) skewX(0deg);
+    opacity: 1;
+  }
+}
+@keyframes floatingClouds {
+  0% {
+    -webkit-transform: rotateZ(0deg) translateX(6px) rotateZ(0deg);
+    transform: rotateZ(0deg) translateX(6px) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg) translateX(6px) rotateZ(360deg);
+    transform: rotateZ(-360deg) translateX(6px) rotateZ(360deg);
+  }
+}
+
+.Eclips {
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+  animation: eclips 3s forwards;
+}
+.Eclips1 {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  animation: eclips 3s forwards;
+}
+.Eclips2 {
+  position: absolute;
+  top: 20px;
+  right: 351px;
+  z-index: 0;
+  animation: eclips 3s forwards;
+}
+.Eclips3 {
+  position: absolute;
+  bottom: 81px;
+  left: 426px;
+  z-index: 0;
+  animation: eclips 3s forwards;
+}
+
+.home-section-1 .home-section-2 {
+  animation: eclips 3s forwards;
+}
+
+@media screen and (max-width: 1022px) {
+  .Eclips2 {
+    right: 520px;
+  }
+}

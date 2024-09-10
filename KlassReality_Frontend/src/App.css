@@ -1,0 +1,29 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+*::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.layout-bg {
+  background: url(./assets/bg.png);
+}
+
+#unity-container {
+  width: 100% !important;
+}
+#unity-canvas {
+  width: 100% !important;
+}

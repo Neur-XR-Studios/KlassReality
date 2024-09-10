@@ -1,0 +1,18 @@
+.static-images-container {
+    position: sticky;
+    top: 0; /* Add a background color if necessary */
+    z-index: 100; /* Set a z-index to ensure it's above other elements */
+  }
+  .video-player-container {
+    position: relative;
+    width:100%; /* Set desired width */
+    height: 345px; /* Set desired height */
+    margin-bottom: 20px; /* Added some margin at the bottom */
+  }
+  
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
