@@ -5,7 +5,7 @@ to installation, follow these steps:
 Clone the repo:
 
 ```bash
-git clone https://github.com/Neur-XR-Studios/klass-vr-backend.git
+git clone https://github.com/Neur-XR-Studios/KlassReality.git
 cd KlassReality_Backend
 ```
 
